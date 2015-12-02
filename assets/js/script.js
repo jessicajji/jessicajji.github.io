@@ -16,7 +16,6 @@ $(document).ready(function() {
     $('html, body').animate({scrollTop:$('#portfolio-section').position().top}, 500);
   });
 
-
   $('#contact').click(function() {
     $('.form-container').fadeIn(500);
     $('body').addClass('no-scroll');
