@@ -242,14 +242,14 @@ a:visited {
 #computer-container {
 	width: 500px;
 	position: relative;
-	top: 70px;
+	top: 73px;
 	left: 11.3%;
 }
 
 #computer {
 	width: 500px;
 	position: relative;
-	top: 70px;
+	top: 73px;
 	left: 11.3%;
 }
 
@@ -257,7 +257,7 @@ a:visited {
 	width: 372.5px;
 	height: 235px;
 	position: absolute;
-	margin-top: -220px;
+	margin-top: -222px;
 	margin-left: 121px;
 }
 
@@ -265,8 +265,8 @@ a:visited {
 	width: 372.5px;
 	height: 235px;
 	position: absolute;
-	margin-top: -225px;
-	margin-left: 121px;
+	margin-top: -221px;
+	margin-left: 120px;
 }
 
 .sidebar {
@@ -296,40 +296,22 @@ a:visited {
 
 .icon {
 	position: absolute;
-	top: 55%;
+	top: 53%;
+	height: 40px;
+	width: 40px;
 	cursor: pointer;
 }
 
 #facebook {
-	left: 43%;
+	left: 43.5%;
 }
 
 #linkedin {
-	left: 48%;
+	left: 48.5%;
 }
 
 #github {
-	left: 35%;
-}
-
-.clickable {
-	height: 40px;
-	width: 50px;
-	background: transparent;
-	position: absolute;
-	top: 55%;
-}
-
-#box1 {
-	left: 43%;
-}
-
-#box2 {
-	left: 48%;
-}
-
-#box3 {
-	left: 53%;
+	left: 53.5%;
 }
 
 .project-description {
