@@ -35,7 +35,11 @@ h2 {
   padding: 10px 40px;
   position: absolute;
   left: 50%;
+  top: 20px;
   transform: translateX(-50%);
+}
+#contact-head {
+  top: 0px;
 }
 #abouttitle {
   color: black;
@@ -51,6 +55,10 @@ body a:hover{
 	text-decoration:none;
 }
 .strip {
+  margin-top: 25px;
+  margin-right: 13px;
+}
+#strip-contact{
   margin-top: 10px;
   margin-right: 13px;
 }
@@ -167,7 +175,7 @@ margin-right: 11px;
  margin-left: 11px;
 }
 .banner-right a:hover {
-  letter-spacing: 1.5px;
+letter-spacing: 1.5px;
 background-color: #8B2252;
 }
 .banner-left{
@@ -345,12 +353,17 @@ transition: all 0.7s ease;
 .gallery-grids {
   margin-top: 50px;
 }
-.button a:hover{
+/*.button a:hover{
 color: #000;
-}
+}*/
 .button:hover{
-  background-color: white;
-  color: #000;
+  background-color: #DB7093;
+  width: 40%;
+    -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+
 }
 .button {
   border: 2px solid #fff;
@@ -377,7 +390,8 @@ color:#fff;
   font-weight: 700;
 }
 #more-projects:hover{
-  color:#000;
+  opacity: 0.9;
+  width: 200px;
 }
 /*--//portfolio--*/
 /*-- contact --*/
