@@ -27,6 +27,7 @@ h2 {
   letter-spacing: 15px;
   height: 80px;
   width: 100%;
+  text-align: center;
   position: relative;
   margin-top: -30px;
 }
@@ -524,9 +525,18 @@ margin-right:0;
   a.boxclose {
     right: 250px;
   }
-
-}
+  #map{
+    width: 500px;
+  }
 @media(max-width:1280px){
+  #map{
+    width: 500px;
+  }
+  .banner-info{
+    width: 65%;
+  }
+}
+@media(max-width:1199px){
   a.boxclose {
     right: 160px;
   }
@@ -537,7 +547,6 @@ margin-right:0;
   .logo img{
    width:100%;
   }
-  
   .about-back {
     min-height: 79px;
   }
@@ -559,10 +568,8 @@ margin-right:0;
   .footer-top {
     min-height: 147px;
   }
-}
-@media(max-width:1024px){
-  .top-nav {
-    margin-top: 8px;
+  #map{
+    width: 350px;
   }
   .banner.page-head {
     min-height: 96px;
@@ -571,7 +578,7 @@ margin-right:0;
     margin: 20px 0px 0px 0px;
   }
   .banner-info {
-    width: 78%;
+    width: 71%;
     margin: 100px auto 0 auto;
   }
   .banner-right h1 {
@@ -585,6 +592,85 @@ margin-right:0;
     font-size: 14px;
     padding: 12px 20px;
   }  
+  .banner-left{
+    margin-top: 15px;
+    float:left;
+    width: 240px;
+    height: 120px;
+  }
+  .banner-right{
+    margin-top: 10px;
+    float: right;
+  }
+  .banner {
+    min-height: 575px;
+  } 
+  .gallery-section {
+    padding: 92px 0 0px 0;
+  }
+  .gallery-section h3 {
+    font-size: 32px;
+    }
+  #portfolio p {
+    font-size: 16px;
+    }
+  .gallery-grids {
+    margin-top: 40px;
+  }
+  .textbox h4 {
+    margin-top: 25px;
+    font-size: 22px;
+  }
+  .textbox {
+    width: 93.8%;
+  }
+  .textbox .description {
+    padding:13px;
+    font-size: 11px;
+  }
+  .button {
+    padding: 5px;
+    width: 40%;
+    }
+  .button a {
+    font-size: 15px;
+    }
+}
+@media(max-width:1024px){
+  .top-nav {
+    margin-top: 8px;
+  }
+  .banner.page-head {
+    min-height: 96px;
+  }
+  .strip {
+    margin: 20px 0px 0px 0px;
+  }
+  .banner-info {
+    width: 70%;
+    margin: 100px auto 0 auto;
+  }
+  .banner-right h1 {
+    font-size: 30px;
+    margin: 23px 0 15px 0;
+    }
+  .banner-right h2 {
+    font-size: 45px;
+    }
+  .banner-right a {
+    font-size: 14px;
+    padding: 12px 20px;
+  }  
+  .banner-left{
+    margin-top: 15px;
+    float:left;
+    width: 240px;
+    height: 120px;
+  }
+  .banner-right{
+    margin-top: 10px;
+    float: right;
+  }
   .banner {
     min-height: 575px;
   } 
@@ -601,29 +687,53 @@ margin-right:0;
   .about-back {
     min-height: 64px;
   } 
+  
+  .sectiontitle {
+    font-weight: 500;
+    font-size: 35px;
+    letter-spacing: 13px;
+    height: 80px;
+    width: 100%;
+    position: relative;
+    margin-top: -30px;
+  }
+  .infocontainer{
+    height: 500px;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-76%);
+    margin-top: 20px;
+  }
+  #map {
+    width: 0px;
+    height: 0px;
+  }
   .gallery-section {
-    padding: 92px 0 0px 0;
+    padding: 95px 0 0px 0;
   }
   .gallery-section h3 {
-    font-size: 32px;
-    }
+    font-size: 30px;
+  }
   #portfolio p {
-    font-size: 16px;
-    }
-  .gallery-grids {
-    margin-top: 40px;
+    font-size: 14px;
+  }
+  .gallery-grid {
+    float: left;
+    width: 33.3%;
+  }
+  .gallery-section {
+    min-height: 893px;
   }
   .textbox h4 {
-    margin-top: 89px;
+    margin-top: 26px;
+    font-size: 20px;
   }
-  .button {
-    padding: 7px;
-    }
-  .button a {
-    font-size: 16px;
-    }
-  .gallery-section {
-    min-height: 1400px;
+  .textbox {
+    width: 93.8%;
+  }
+  .textbox .description {
+    padding: 13px;
+    font-size: 13px !important;
   }
   .contact {
     padding: 45px 0 0 0;
@@ -674,6 +784,89 @@ margin-right:0;
   .clients {
     padding: 0 0 45px 0;
     }
+  .infocontainer{
+    height: 500px;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-60%);
+    margin-top: 20px;
+  }
+    .button {
+    padding: 3px;
+    width: 40%;
+    font-size:15px;
+  }
+}
+@media(max-width:991px){
+  .banner.page-head {
+    min-height: 96px;
+  }
+  .strip {
+    margin: 20px 0px 0px 0px;
+  }
+  .banner-info {
+    width: 92%;
+    margin: 100px auto 0 auto;
+  }
+  .banner-right h1 {
+    font-size: 30px;
+    margin: 23px 0 15px 0;
+    }
+  .banner-right h2 {
+    font-size: 45px;
+    }
+  .banner-right a {
+    font-size: 14px;
+    padding: 12px 20px;
+  }  
+  .banner-left{
+    margin-top: 15px;
+    float:left;
+    width: 240px;
+    height: 120px;
+  }
+  .banner-right{
+    margin-top: 10px;
+    float: right;
+  }
+  .strip {
+    margin-right: 8px;
+  }
+  .banner {
+    min-height: 575px;
+  } 
+  .gallery-section {
+    padding: 120px 0 0px 0;
+  }
+  .gallery-section h3 {
+    font-size: 30px;
+  }
+  #portfolio p {
+    font-size: 14px;
+  }
+  .gallery-grid {
+    float: left;
+    width: 33.3%;
+  }
+  .gallery-section {
+    min-height: 893px;
+  }
+  .textbox h4 {
+    margin-top: 25px;
+    font-size: 18px;
+  }
+  .textbox{
+    width: 92%;
+  }
+  .textbox .description {
+  padding: 15px;
+  font-size: 12px !important;
+  }
+  .button {
+    padding: 3px;
+    width: 40%;
+    font-size:15px;
+  }
 }
 @media(max-width:768px){
   .top-nav {
@@ -708,10 +901,6 @@ margin-right:0;
     float: right;
     width: 64%;
   }
-  .logo {
-    float: left;
-    width: 14%;
-  }
   .banner-info {
     margin: 80px auto 0 auto;
   }
@@ -744,13 +933,16 @@ margin-right:0;
     min-height: 48px;
   }
   .about {
-    padding: 40px 0 15px 0;
+    padding: 50px 0 15px 0;
   }
   .gallery-section {
-    padding: 68px 0 0px 0;
+    padding: 90px 0 0px 0;
+  }
+  .sectiontitle {
+    font-size: 26px;
   }
   .gallery-section h3 {
-    font-size: 30px;
+    font-size: 18px;
   }
   #portfolio p {
     font-size: 14px;
@@ -762,14 +954,24 @@ margin-right:0;
   .gallery-section {
     min-height: 893px;
   }
+  .textbox .description{
+    padding: 3px 7px 7px 7px;
+    font-size: 10px;
+  }
+  .textbox {
+    width: 91.5%;
+  }
   .textbox h4 {
-    margin-top: 55px;
+    margin-top: 16px;
   }
   .contact-info h3 {
     font-size: 30px;
   }
   .contact {
-    padding: 40px 0 0 0;
+    padding: 50px 0 0 0;
+  }
+  .strip {
+    margin-right: 15px;
   }
   .contact-left {
     float: left;
