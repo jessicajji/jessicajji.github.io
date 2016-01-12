@@ -417,14 +417,9 @@ margin-right:0;
   height: 550px;
   font-size: 20px;
 }
-.infocontainer{
-  height: 500px;
-  width: 50%;
-  float: left;
-  margin-top: 20px;
-}
+
 .mapcontainer{
-  margin-top: 38px;
+  margin-top: 30px;
   height: 400px;
   width: 50%;
   /*position: absolute;*/
@@ -433,11 +428,6 @@ margin-right:0;
   font-weight: 500;
   font-style: bold;
 }
-/*#map{
-  height: 300px;
-  width: 400px;
-  float: right;
-}*/
 #hello{
   margin-bottom: -40px;
 }
@@ -472,6 +462,53 @@ margin-right:0;
   color: white;
   letter-spacing: 2px;
   font-size: 22px;
+  margin-top: 5px;
+}
+
+.infocontainer{
+  height: 550px;
+  color: white;
+  width: 50%;
+  float: left;
+  margin-top: 20px;
+  font-family:'Roboto', sans-serif;
+}
+label {
+    display:block;
+    margin-top:20px;
+    font-weight: 300;
+    font-size: 18px;
+}
+form {
+    margin:0 auto;
+    width:459px;
+    margin-top: 60px;
+}
+
+/* Style the text boxes */
+input, textarea {
+  width:508px;
+  height:27px;
+  background:#f2f2f2;
+  opacity: 0.95;
+  border:1px solid #dedede;
+  padding:20px;
+  margin-top:3px;
+  font-size: 14px;
+  color:#3a3a3a;
+}
+
+textarea {
+  height:153px;
+}
+#submit {
+  height: 45px;
+  width: 120px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.form_container {
+  float: left;
 }
 
 /*-- responsive media queries --*/
@@ -526,11 +563,11 @@ margin-right:0;
     right: 250px;
   }
   #map{
-    width: 500px;
+    width: 519px;
   }
 @media(max-width:1280px){
   #map{
-    width: 500px;
+    width: 519px;
   }
   .banner-info{
     width: 65%;

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jessica J. Ji</title>
+	<!--fonts-->
+		<link href='//fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,100,700,900' rel='stylesheet' type='text/css'>
+	<!--/fonts-->
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- mobile -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Front-end developer Web Design" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- /mobile -->
+	<!-- js -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- /js -->
+
+</head>
+<body>
+<!-- banner -->
+<div class="banner" id="home">
+	<div class="container">
+		<div class="top-header row">
+			<script src="js/classie.js"></script>
+			<!--top-nav-->
+			<div class="top-nav">
+				<div class="nav-icon">
+					    <a href="#" class="right_bt" id="activator"><span> </span> </a>
+				</div>
+				<div class="box" id="box">
+					<div class="box_content">        					                         
+						<div class="box_content_center">
+							<div class="form_content">
+								<div class="menu_box_list">
+									<ul>
+										<li><a class="scroll" href="#home"><span>home</span></a></li>
+										<li><a class="scroll" href="#about"><span>about</span></a></li>									
+										<li><a class="scroll" href="#portfolio"><span>portfolio</span></a></li>
+										
+										<li><a class="scroll" href="#contact"><span>contact</span></a></li>
+										<!--arrow up-->
+									</ul>
+								</div>
+							</div>                                  
+						</div> 	
+					</div> 
+				</div>       	  
+			</div>
+			<!---start-click-drop-down-menu-->
+			        <!--start-dropdown-->
+			         <script type="text/javascript">
+						var $ = jQuery.noConflict();
+							$(function() {
+								$('#activator').click(function(){
+									$('#box').animate({'top':'0px'},900);
+								});
+								$('.box').click(function(){
+								$('#box').animate({'top':'-1000px'},900);
+								});
+							});
+							$(document).ready(function(){
+							//Hide (Collapse) the toggle containers on load
+							$(".toggle_container").hide(); 
+							//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+							$(".trigger").click(function(){
+								$(this).toggleClass("active").next().slideToggle("slow");
+									return false; //Prevent the browser jump to the link anchor
+							});
+												
+						});
+					</script>
+			<!---//End-click-drop-down-menu-->
+			<div class="clearfix"> </div>
+		</div>
+		<div class="banner-info">
+			<div class="banner-left">
+				<img src="images/face.jpg" alt="" id="face"/>
+			</div>
+			<div class="banner-right">
+				<h1>I'M JESSICA JI</h1>
+				<div class="border"></div>
+				<h2>Freshman at UC Berkeley excited by web development, <br> data science, and social entrepreneurship</h2>
+				<div id="chatbtn"><a href="mailto:jji@berkeley.edu">LET'S CHAT</a></div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--/header-banner-->
+<!--about-->
+<div class="about text-center" id="about">
+	<div class="container">
+		<div class= "sectiontitle text-center" id="abouttitle"><div class="head">ABOUT ME</div></div>
+		<div class="strip text-center"><img src="images/about.png" alt=" "/></div>
+		<p>Hi there! I'm Jessica, a freshman at Cal studying Industrial Engineering and Operations Research and Computer Science. Besides being an avid croissant lover and hiker, I'm also a huge tech enthusiast: I enjoy designing and developing websites, learning about artificial intelligence, and using technology and data for social impact. I'm currently doing research for <a href="http://hackingmeasurement.berkeley.edu/projects/the-carpool-project.html">The Carpool Project</a> at the Berkeley Institute for Data Science and I just finished my first semester of consulting for <a href="http://bc.berkeley.edu">Berkeley Consulting</a>. This past summer, I was at Coherus BioSciences performing statistical data analysis for their drug product manufacturing processes.
+
+			</p>
+		<ul>
+			<li><a class="fb" href="https://www.facebook.com/heyitsjessicaa"></a></li>
+			<li><a class="gh" href="https://github.com/jessicajji"></a></li>
+			<li><a class="in" href="https://www.linkedin.com/in/jessicajji"></a></li>
+			<li><a class="em" href="mailto:jji@berkeley.edu"></a></li>
+		</ul>
+	</div>
+</div>
+<!--//about-->
+
+
+<!--portfolio-->
+<div class="portfolio-section">
+<div class="gallery-section" id="portfolio">
+	<div class="container">
+		<div class= "sectiontitle"><div class="head">PORTFOLIO</div></div>
+		<div class="strip text-center"><img src="images/port.png" alt=" "/></div>
+		<div class="gallery-grids">
+			<div class="top-gallery">
+				<div class="col-md-4 gallery-grid gallery1">
+					<div class="preview"><img src="images/home.png" class="port_img img-responsive" alt="/">
+						<div class="textbox">
+							<h4>NERD HERD</h4>
+							<div class="description">Created a tutor location service with my CalHacks team using Elastic Search, Google Maps API, HTML/CSS, JavaScript, and JQuery</div>
+						</div></div>
+				</div>
+				<div class="col-md-4 gallery-grid gallery1">
+					<div class="preview"><img src="images/scheme.jpg" class="port_img img-responsive" alt="/">
+						<div class="textbox">
+							<h4>SCHEME INTERPRETER</h4>
+							<div class="description">Developed an interpreter for a subset of the Scheme language that works with immutable values, uses only expressions, and specializes in symbolic computation</div>
+							<div class="button"><a href="https://github.com/jessicajji/scheme_interpreter" class="swipebox">VIEW</a></div>
+						</div></div>
+				</div></a>
+				<div class="col-md-4 gallery-grid gallery1">
+					<div class="preview"><img src="images/ants.png" class="port_img img-responsive" alt="/">
+						<div class="textbox">
+							<h4>ANTS VS BEES GAME</h4>
+							<div class="description">Implemented a tower defense game using Python that was inspired by PopCap Games' Plants Vs. Zombies</div>
+							<div class="button"><a href="https://github.com/jessicajji/ants_vs_bees" class="swipebox">VIEW</a></div>
+						</div></div>
+				</div>
+				<div class="col-md-4 gallery-grid gallery1">
+					<div class="preview"><img src="images/carpool.jpg" class="port_img img-responsive" alt="/">
+						<div class="textbox">
+							<h4>DATA SCIENCE RESEARCH</h4>
+							<div class="description">Built a Shiny app with RStudio to visualize moves data for a mobility marketplace enabled by carpooling and mobile phones</div>
+							<div class="button" id="view"><a href="https://github.com/jessicajji/carpool_project" class="swipebox">VIEW</a></div>
+						</div></div>
+				</div></a>
+				<div class="col-md-4 gallery-grid gallery1">
+					<div class="preview"><img src="images/mapsproj.png" class="port_img img-responsive" alt="/">
+						<div class="textbox">
+							<h4>YELP PREDICTOR</h4>
+							<div class="description">Created a visualization of restaurant ratings using machine learning. Employed the k-means algorithm to group restaurants according to preferences and the least-squares regression to predict user ratings. </div>
+						</div></div>						
+				</div></a>
+				<div class="col-md-4 gallery-grid gallery1">
+					<div class="preview"><img src="images/reddit.png" class="port_img img-responsive" alt="/">
+						<div class="textbox">
+							<h4>REDDIT REDESIGN</h4>
+							<div class="description">Utilized HTML/CSS in making design decisions to improve the UI/UX of Reddit's home, search, and thread pages</div>
+							<div class="button"><a href="https://github.com/jessicajji/reddit_redesign" class="swipebox">VIEW</a></div>
+						</div></div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="button text-center" id="more-projects"><a href="https://www.linkedin.com/in/jessicajji">MORE</a></div>
+
+	</div>
+</div></div>
+<!--//portfolio-->
+<!--contact-->
+<div class="contact" id="contact">
+	<div class="container">
+		<div class="contact-info text-center">
+			<div class= "sectiontitle"><div class="head" id="contact-head">CONTACT</div></div>
+			<div class="strip text-center" id="strip-contact"><img src="images/skill.png" alt=" "/></div>
+		</div>
+		<div class="contactcontainer">
+			<div class="col-md-5 infocontainer">
+				<div class="contactheader" id="hello">GET IN TOUCH</div>
+				<div class="stripb"></div>
+				<script language="javascript">var sa_email_id = '66020-1b713';var sa_sent_text = 'Thank you for contacting me! I\'ll get back to you soon.';</script>
+					<script language="javascript" src="http://s1.smartaddon.com/sa_htmlform.js"></script>
+					<div id="sa_contactdiv">
+						<form name=sa_htmlform style="margin:0px" onsubmit="return sa_contactform()">
+						<table>
+
+						<tr><td><div class="inputlabel" id="yourname">Name *</div><input type="text" name="name" required="true" style="width:500px;font-size: 14px; padding: 10px;"/></td></tr>
+						<div class="fieldbreak"></div>
+						<tr><td><div class="inputlabel" id="youremail">Email *</div><input type="text" name="email" required="true" style="width:500px;font-size: 14px; padding: 10px;"/></td></tr>
+						<tr><td><div class="inputlabel" id="yoursubject">Subject *</div><input type="text" name="subject" style="width:500px;font-size: 14px; padding: 10px;"/></td></tr>
+						<tr><td><div class="inputlabel" id="yourmessage">Message *</div><textarea name="message" cols="42" rows="3" required="true" style="width:500px;font-size: 14px; padding: 10px;"></textarea></td></tr>
+						<tr><td><input type="submit" value="SEND" style="font-weight: 700;margin-top: 16px; padding: 10px 30px;font-size: 14px; background-color: white; border: 1px solid gray;" id="emailbtn"></td></tr>
+						</table>
+						</form>		
+					</div>
+			</div>
+			<div class="col-md-7 mapcontainer">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3149.508869071786!2d-122.26066029035253!3d37.871780625027185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7718c522d7c1%3A0xda8034ea3b6b3289!2sUniversity+of+California%2C+Berkeley!5e0!3m2!1sen!2sus!4v1451498043393" width="500" height="460" id ="map" frameborder="0" style="border:0; float: right;" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+<!--//contact-->
+
+
+</body>
+</html>
