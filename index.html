@@ -96,7 +96,7 @@
 	<div class="container">
 		<div class= "sectiontitle text-center" id="abouttitle"><div class="head">ABOUT ME</div></div>
 		<div class="strip text-center"><img src="images/about.png" alt=" "/></div>
-		<p>Hi there! I'm Jessica, a freshman at Cal studying Industrial Engineering and Operations Research and Computer Science. Besides being an avid croissant lover and hiker, I'm also a huge tech enthusiast: I enjoy designing and developing websites, learning about artificial intelligence, and using technology and data for social impact. I'm currently doing research for <a href="http://hackingmeasurement.berkeley.edu/projects/the-carpool-project.html">The Carpool Project</a> at the Berkeley Institute for Data Science and I just finished my first semester of consulting for <a href="http://bc.berkeley.edu">Berkeley Consulting</a>. This past summer, I was at Coherus BioSciences performing statistical data analysis for their drug product manufacturing processes.
+		<p>Hi there! I'm Jessica, a freshman at Cal studying Industrial Engineering and Operations Research and Computer Science. Besides being a croissant lover and hiker, I'm also a huge tech enthusiast: I enjoy designing and developing websites, experimenting with machine learning projects, and using technology and data for social impact. I'm currently doing research for <a href="http://hackingmeasurement.berkeley.edu/projects/the-carpool-project.html">The Carpool Project</a> at the Berkeley Institute for Data Science and I just finished my first semester of consulting for <a href="http://bc.berkeley.edu">Berkeley Consulting</a>. This past summer, I was at Coherus BioSciences performing statistical data analysis for their drug product manufacturing processes.
 
 			</p>
 		<ul>
@@ -121,7 +121,7 @@
 				<div class="col-md-4 gallery-grid gallery1">
 					<div class="preview"><img src="images/home.png" class="port_img img-responsive" alt="/">
 						<div class="textbox">
-							<h4>NERD HERD</h4>
+							<h4>NERD HERD WEB APP</h4>
 							<div class="description">Created a tutor location service with my CalHacks team using Elastic Search, Google Maps API, HTML/CSS, JavaScript, and JQuery</div>
 						</div></div>
 				</div>
@@ -144,7 +144,7 @@
 				<div class="col-md-4 gallery-grid gallery1">
 					<div class="preview"><img src="images/carpool.jpg" class="port_img img-responsive" alt="/">
 						<div class="textbox">
-							<h4>DATA SCIENCE RESEARCH</h4>
+							<h4>DATA VISUALIZATION</h4>
 							<div class="description">Built a Shiny app with RStudio to visualize moves data for a mobility marketplace enabled by carpooling and mobile phones</div>
 							<div class="button" id="view"><a href="https://github.com/jessicajji/carpool_project">VIEW</a></div>
 						</div></div>
@@ -152,7 +152,7 @@
 				<div class="col-md-4 gallery-grid gallery1">
 					<div class="preview"><img src="images/mapsproj.png" class="port_img img-responsive" alt="/">
 						<div class="textbox">
-							<h4>YELP PREDICTOR</h4>
+							<h4>RESTAURANT PREDICTOR</h4>
 							<div class="description">Created a visualization of restaurant ratings using machine learning. Employed the k-means algorithm to group restaurants according to preferences and the least-squares regression to predict user ratings. </div>
 						</div></div>						
 				</div></a>
@@ -194,19 +194,28 @@
 						<tr><td><div class="inputlabel" id="youremail">Email *</div><input type="text" name="email" required="true" style="width:500px;font-size: 14px; padding: 15px;"/></td></tr>
 						<tr><td><div class="inputlabel" id="yoursubject">Subject *</div><input type="text" name="subject" style="width:500px;font-size: 14px; padding: 15px;"/></td></tr>
 						<tr><td><div class="inputlabel" id="yourmessage">Message *</div><textarea name="message" cols="42" rows="3" required="true" style="width:500px; height: 109px;font-size: 14px; padding: 10px;"></textarea></td></tr>
-						<tr><td><input type="submit" value="SEND" style="font-weight: 700;margin-top: 16px; width: 100px;font-size: 14px; background-color: white; border: 1px solid gray; text-align: center, margin: 0 auto;" id="emailbtn"></td></tr>
+						<tr><td><input type="submit" value="SEND" style="font-weight: 700;margin-top: 16px; width: 100px;font-size: 14px; background-color: white; border: 1px solid gray; text-align: center, margin: 0 auto; padding-top: 10px; padding-bottom: 30px;" id="emailbtn"></td></tr>
 						</table>
 						</form>		
 					</div>
 				</div>
 			<div class="col-md-7 mapcontainer">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3149.508869071786!2d-122.26066029035253!3d37.871780625027185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7718c522d7c1%3A0xda8034ea3b6b3289!2sUniversity+of+California%2C+Berkeley!5e0!3m2!1sen!2sus!4v1451498043393" width="540" height="480" id ="map" frameborder="0" style="border:0; float: right;" allowfullscreen></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3149.508869071786!2d-122.26066029035253!3d37.871780625027185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7718c522d7c1%3A0xda8034ea3b6b3289!2sUniversity+of+California%2C+Berkeley!5e0!3m2!1sen!2sus!4v1451498043393" width="540" height="479" id ="map" frameborder="0" style="border:0; float: right;" allowfullscreen></iframe>
 			</div>
 		</div>
+		<div id="backtotop"><img src="images/uparrow.png" id="uparrow"/><div>
+			<!--animate scroll to top button-->
+			<script type="text/javascript">
+				$(function() {
+					$('#uparrow').click(function(){
+						$("html, body").animate({ scrollTop: 0}, 500);
+					});												
+				});
+			</script>
+			<!--//end animation-->
 	</div>
 </div>
 <!--//contact-->
-
 
 </body>
 </html>
