@@ -18,7 +18,6 @@
 	<!-- js -->
 		<script type="text/javascript" src="js/jquery.min.js"></script>		
 	<!-- /js -->
-
 </head>
 <body>
 <!-- banner -->
@@ -40,7 +39,6 @@
 										<li><a class="scroll" href="#home"><span>home</span></a></li>
 										<li><a class="scroll" href="#about"><span>about</span></a></li>									
 										<li><a class="scroll" href="#portfolio"><span>portfolio</span></a></li>
-										
 										<li><a class="scroll" href="#contact"><span>contact</span></a></li>
 										<!--arrow up-->
 									</ul>
@@ -69,8 +67,7 @@
 							$(".trigger").click(function(){
 								$(this).toggleClass("active").next().slideToggle("slow");
 									return false; //Prevent the browser jump to the link anchor
-							});
-												
+							});				
 						});
 					</script>
 			<!---//End-click-drop-down-menu-->
@@ -81,10 +78,16 @@
 				<img src="images/face.jpg" alt="" id="face"/>
 			</div>
 			<div class="banner-right">
-				<h1>I'M JESSICA JI</h1>
+				<div>
+					<h1>I'M JESSICA JI</h1>
+				</div>
 				<div class="border"></div>
-				<h2>Freshman at UC Berkeley excited by web development, <br> data science, and social entrepreneurship</h2>
-				<div id="chatbtn"><a href="mailto:jji@berkeley.edu">LET'S CHAT</a></div>
+				<div>
+					<h2>Freshman at UC Berkeley excited by web development, <br> data science, and social entrepreneurship</h2>
+				</div>
+				<div id="chatbtn"><a href="mailto:jji@berkeley.edu">
+					LET'S CHAT</a>
+				</div>
 			</div>
 			<div class="clearfix"> </div>
 		</div>
@@ -94,11 +97,15 @@
 <!--about-->
 <div class="about text-center" id="about">
 	<div class="container">
-		<div class= "sectiontitle text-center" id="abouttitle"><div class="head">ABOUT ME</div></div>
-		<div class="strip text-center"><img src="images/about.png" alt=" "/></div>
-		<p>Hi there! I'm Jessica, a freshman at Cal studying Industrial Engineering and Operations Research and Computer Science. Besides being a croissant lover and hiker, I'm also a huge tech enthusiast: I enjoy designing and developing websites, experimenting with machine learning projects, and using technology and data for social impact. I'm currently doing research for <a href="http://hackingmeasurement.berkeley.edu/projects/the-carpool-project.html">The Carpool Project</a> at the Berkeley Institute for Data Science and I just finished my first semester of consulting for <a href="http://bc.berkeley.edu">Berkeley Consulting</a>. This past summer, I was at Coherus BioSciences performing statistical data analysis for their drug product manufacturing processes.
-
-			</p>
+		<div class= "sectiontitle text-center" id="abouttitle">
+			<div class="head">ABOUT ME</div>
+		</div>
+		<div class="strip text-center">
+			<img src="images/about.png" class="strip-image" alt=" "/>
+		</div>
+		<p>
+			Hi there! I'm Jessica, a freshman at Cal studying Industrial Engineering and Operations Research and Computer Science. Besides being a croissant lover and hiker, I'm also a huge tech enthusiast: I enjoy designing and developing websites, experimenting with machine learning projects, and using technology and data for social impact. I'm currently doing research for <a href="http://hackingmeasurement.berkeley.edu/projects/the-carpool-project.html">The Carpool Project</a> at the Berkeley Institute for Data Science and I just finished my first semester of consulting for <a href="http://bc.berkeley.edu">Berkeley Consulting</a>. This past summer, I was at Coherus BioSciences performing statistical data analysis for their drug product manufacturing processes.
+		</p>
 		<ul>
 			<li><a class="fb" href="https://www.facebook.com/heyitsjessicaa"></a></li>
 			<li><a class="gh" href="https://github.com/jessicajji"></a></li>
@@ -108,94 +115,143 @@
 	</div>
 </div>
 <!--//about-->
-
-
 <!--portfolio-->
 <div class="portfolio-section">
-<div class="gallery-section" id="portfolio">
-	<div class="container">
-		<div class= "sectiontitle"><div class="head">PORTFOLIO</div></div>
-		<div class="strip text-center"><img src="images/port.png" alt=" "/></div>
-		<div class="gallery-grids">
-			<div class="top-gallery">
-				<div class="col-md-4 gallery-grid gallery1">
-					<div class="preview"><img src="images/home.png" class="port_img img-responsive" alt="/">
-						<div class="textbox">
-							<h4>NERD HERD WEB APP</h4>
-							<div class="description">Created a tutor location service with my CalHacks team using Elastic Search, Google Maps API, HTML/CSS, JavaScript, and JQuery</div>
-						</div></div>
+	<div class="gallery-section" id="portfolio">
+		<div class="container">
+			<div class= "sectiontitle">
+				<div class="head">PORTFOLIO</div>
+			</div>
+			<div class="strip text-center">
+				<img src="images/port.png" class="strip-image" alt=" "/>
+			</div>
+			<div class="gallery-grids">
+				<div class="top-gallery">
+					<div class="col-md-4 gallery-grid gallery1">
+						<div class="preview"><img src="images/home.png" class="port_img img-responsive" alt="/">
+							<div class="textbox">
+								<h4>NERD HERD WEB APP</h4>
+								<div class="description">
+									Created a tutor location service with my CalHacks team using Elastic Search, Google Maps API, HTML/CSS, JavaScript, and JQuery
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 gallery-grid gallery1">
+						<div class="preview">
+							<img src="images/scheme.jpg" class="port_img img-responsive" alt="/">
+							<div class="textbox">
+								<h4>SCHEME INTERPRETER</h4>
+								<div class="description">
+									Developed an interpreter for a subset of the Scheme language that works with immutable values, uses only expressions, and specializes in symbolic computation
+								</div>
+								<div class="button">
+									<a href="https://github.com/jessicajji/scheme_interpreter">VIEW</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 gallery-grid gallery1">
+						<div class="preview">
+							<img src="images/meanshift.png" class="port_img img-responsive" alt="/">
+							<div class="textbox">
+								<h4>HIERARCHICAL CLUSTERING</h4>
+								<div class="description">
+									Constructed a Mean Shift machine learning algorithm to iteratively identify high-density, popular locations and show route overlap across sample users
+								</div>
+								<div class="button">
+									<a href="https://github.com/jessicajji/hierarchical_clustering_mean_shift">VIEW</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 gallery-grid gallery1">
+						<div class="preview">
+							<img src="images/carpool.jpg" class="port_img img-responsive" alt="/">
+							<div class="textbox">
+								<h4>DATA VISUALIZATION</h4>
+								<div class="description">
+									Built a Shiny app with RStudio to visualize moves data for a mobility marketplace enabled by carpooling and mobile phones
+								</div>
+								<div class="button" id="view"><a href="https://github.com/jessicajji/carpool_project">VIEW</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 gallery-grid gallery1">
+						<div class="preview">
+							<img src="images/mapsproj.png" class="port_img img-responsive" alt="/">
+							<div class="textbox">
+								<h4>RESTAURANT PREDICTOR</h4>
+								<div class="description">
+									Created a visualization of restaurant ratings using machine learning. Employed the k-means algorithm to group restaurants according to preferences and the least-squares regression to predict user ratings.
+								</div>
+							</div>
+						</div>						
+					</div>
+					<div class="col-md-4 gallery-grid gallery1">
+						<div class="preview">
+							<img src="images/reddit.png" class="port_img img-responsive" alt="/">
+							<div class="textbox">
+								<h4>REDDIT REDESIGN</h4>
+								<div class="description">
+									Utilized HTML/CSS in making design decisions to improve the UI/UX of Reddit's home, search, and thread pages
+								</div>
+								<div class="button">
+									<a href="https://github.com/jessicajji/reddit_redesign">VIEW</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
 				</div>
-				<div class="col-md-4 gallery-grid gallery1">
-					<div class="preview"><img src="images/scheme.jpg" class="port_img img-responsive" alt="/">
-						<div class="textbox">
-							<h4>SCHEME INTERPRETER</h4>
-							<div class="description">Developed an interpreter for a subset of the Scheme language that works with immutable values, uses only expressions, and specializes in symbolic computation</div>
-							<div class="button"><a href="https://github.com/jessicajji/scheme_interpreter">VIEW</a></div>
-						</div></div>
-				</div></a>
-				<div class="col-md-4 gallery-grid gallery1">
-					<div class="preview"><img src="images/meanshift.png" class="port_img img-responsive" alt="/">
-						<div class="textbox">
-							<h4>HIERARCHICAL CLUSTERING</h4>
-							<div class="description">Constructed a Mean Shift machine learning algorithm to iteratively identify high-density, popular locations and show route overlap across sample users</div>
-							<div class="button"><a href="https://github.com/jessicajji/hierarchical_clustering_mean_shift">VIEW</a></div>
-						</div></div>
-				</div>
-				<div class="col-md-4 gallery-grid gallery1">
-					<div class="preview"><img src="images/carpool.jpg" class="port_img img-responsive" alt="/">
-						<div class="textbox">
-							<h4>DATA VISUALIZATION</h4>
-							<div class="description">Built a Shiny app with RStudio to visualize moves data for a mobility marketplace enabled by carpooling and mobile phones</div>
-							<div class="button" id="view"><a href="https://github.com/jessicajji/carpool_project">VIEW</a></div>
-						</div></div>
-				</div></a>
-				<div class="col-md-4 gallery-grid gallery1">
-					<div class="preview"><img src="images/mapsproj.png" class="port_img img-responsive" alt="/">
-						<div class="textbox">
-							<h4>RESTAURANT PREDICTOR</h4>
-							<div class="description">Created a visualization of restaurant ratings using machine learning. Employed the k-means algorithm to group restaurants according to preferences and the least-squares regression to predict user ratings. </div>
-						</div></div>						
-				</div></a>
-				<div class="col-md-4 gallery-grid gallery1">
-					<div class="preview"><img src="images/reddit.png" class="port_img img-responsive" alt="/">
-						<div class="textbox">
-							<h4>REDDIT REDESIGN</h4>
-							<div class="description">Utilized HTML/CSS in making design decisions to improve the UI/UX of Reddit's home, search, and thread pages</div>
-							<div class="button"><a href="https://github.com/jessicajji/reddit_redesign">VIEW</a></div>
-						</div></div>
-				</div>
-				<div class="clearfix"> </div>
+			</div>
+			<div class="button text-center" id="more-projects">
+				<a href="https://www.linkedin.com/in/jessicajji">MORE</a>
 			</div>
 		</div>
-		<div class="button text-center" id="more-projects"><a href="https://www.linkedin.com/in/jessicajji">MORE</a></div>
-
 	</div>
-</div></div>
+</div>
 <!--//portfolio-->
 <!--contact-->
 <div class="contact" id="contact">
 	<div class="container">
 		<div class="contact-info text-center">
-			<div class= "sectiontitle"><div class="head" id="contact-head">CONTACT</div></div>
-			<div class="strip text-center" id="strip-contact"><img src="images/skill.png" alt=" "/></div>
+			<div class= "sectiontitle">
+				<div class="head" id="contact-head">CONTACT</div>
+			</div>
+			<div class="strip text-center">
+				<img src="images/skill.png" class="strip-image" alt=" "/>
+			</div>
 		</div>
 		<div class="contactcontainer">
 			<div class="col-md-5 infocontainer">
 				<div class="contactheader" id="hello">GET IN TOUCH</div>
-				<div class="stripb"></div>
 				<script language="javascript">var sa_email_id = '66020-1b713';var sa_sent_text = 'Thank you for contacting me! I\'ll get back to you soon.';</script>
 					<script language="javascript" src="http://s1.smartaddon.com/sa_htmlform.js"></script>
 					<div id="sa_contactdiv">
 						<form name=sa_htmlform style="margin:0px" onsubmit="return sa_contactform()">
-						<table>
-
-						<tr><td><div class="inputlabel" id="yourname">Name *</div><input type="text" name="name" required="true" style="width:500px;font-size: 14px; padding: 15px;"/></td></tr>
-						<div class="fieldbreak"></div>
-						<tr><td><div class="inputlabel" id="youremail">Email *</div><input type="text" name="email" required="true" style="width:500px;font-size: 14px; padding: 15px;"/></td></tr>
-						<tr><td><div class="inputlabel" id="yoursubject">Subject *</div><input type="text" name="subject" style="width:500px;font-size: 14px; padding: 15px;"/></td></tr>
-						<tr><td><div class="inputlabel" id="yourmessage">Message *</div><textarea name="message" cols="42" rows="3" required="true" style="width:500px; height: 109px;font-size: 14px; padding: 10px;"></textarea></td></tr>
-						<tr><td><input type="submit" value="SEND" style="font-weight: 700;margin-top: 16px; width: 100px;font-size: 14px; background-color: white; border: 1px solid gray; text-align: center, margin: 0 auto; padding-top: 10px; padding-bottom: 30px;" id="emailbtn"></td></tr>
-						</table>
+							<table>
+								<tr><td>
+									<div class="inputlabel" id="yourname">Name *</div>
+									<input type="text" name="name" required="true" style="width:500px;font-size: 14px; padding: 15px;"/>
+								</td></tr>
+								<div class="fieldbreak"></div>
+								<tr><td>
+									<div class="inputlabel" id="youremail">Email *</div>
+									<input type="text" name="email" required="true" style="width:500px;font-size: 14px; padding: 15px;"/>
+								</td></tr>
+								<tr><td>
+									<div class="inputlabel" id="yoursubject">Subject *</div>
+									<input type="text" name="subject" style="width:500px;font-size: 14px; padding: 15px;"/>
+								</td></tr>
+								<tr><td>
+									<div class="inputlabel" id="yourmessage">Message *</div>
+									<textarea name="message" cols="42" rows="3" required="true" style="width:500px; height: 109px;font-size: 14px; padding: 10px;"></textarea>
+								</td></tr>
+								<tr><td>
+									<input type="submit" value="SEND" style="font-weight: 700;margin-top: 16px; width: 100px;font-size: 14px; background-color: white; border: 1px solid gray; text-align: center, margin: 0 auto; padding-top: 10px; padding-bottom: 30px;" id="emailbtn">
+								</td></tr>
+							</table>
 						</form>		
 					</div>
 				</div>
@@ -204,18 +260,17 @@
 			</div>
 		</div>
 		<div id="backtotop"><img src="images/uparrow.png" id="uparrow"/><div>
-			<!--animate scroll to top button-->
-			<script type="text/javascript">
-				$(function() {
-					$('#uparrow').click(function(){
-						$("html, body").animate({ scrollTop: 0}, 500);
-					});												
-				});
-			</script>
-			<!--//end animation-->
+		<!--animate scroll to top button-->
+		<script type="text/javascript">
+			$(function() {
+				$('#uparrow').click(function(){
+					$("html, body").animate({ scrollTop: 0}, 500);
+				});												
+			});
+		</script>
+		<!--//end animation-->
 	</div>
 </div>
 <!--//contact-->
-
 </body>
 </html>
