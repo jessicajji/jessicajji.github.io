@@ -198,19 +198,6 @@ float:right;
   margin: 0 auto;
   padding: 1px;
 }
-.slide-down {
-  left: 50%;
-  transform: translateY(-50%);
-  position: absolute;
-  bottom: 10px;
-  border-radius: 50%;
-  border: 1px solid white;
-  padding: 5px;
-}
-#downarrow {
-  width: 30px;
-  height: 30px;
-}
 /*--//banner--*/
 /*--about--*/
 .about{
